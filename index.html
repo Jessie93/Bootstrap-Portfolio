@@ -8,15 +8,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/3cf0805601.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;700&display=swap" rel="stylesheet">
+
 
 	<title>Jessica Stephenson Portfolio</title>
 
-<!-- external CSS link -->
+	<!-- external CSS link -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<!-- Navigation -->
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top container-fluid" id="mainNav">
     <div class="container-fluid">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">JESSICA STEPHENSON</a>
@@ -29,87 +33,105 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#download">ABOUT ME</a>
+            <a class="nav-link js-scroll-trigger" href="#about-me">ABOUT ME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#features">WORK</a>
+            <a class="nav-link js-scroll-trigger" href="#latest-work">WORK</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">CONTACT ME</a>
+            <a class="nav-link js-scroll-trigger">CONTACT ME</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- Hero Section -->
+  <div class="jumbotron jumbotron-fluid">
+	<div class="container">
+	  <h1 class="display-4">Graphic Designer.</h1>
+	  <h1 class="display-4">UX/UI Designer.</h1>
+	  <h1 class="display-4">Front-End Web Developer.</h1>
+	  <button type="button" class="btn btn-outline-light" href="contact-me">Let's Connect</button>
 
-<!-- Hero Section -->
-	<div class="jumbotron jumbotron-fluid">
-		<div class="container">
-		  <h1 class="display-4">Graphic Designer.</h1>
-		  <h1 class="display-4">UX/UI Designer.</h1>
-		  <h1 class="display-4">Front-End Web Developer.</h1>
-		  <button type="button" class="btn btn-outline-light">Let's Connect</button>
-		</div>
 	</div>
+  </div>
 
 
+  <!-- Portfolio Section -->
 
-<!--  Section -->
-	<section>
-		<h4>My Portfolio</h4>
-		<h2>Latest Work</h2>
-		<div id="portfolio-grid">
-			<a href="#" id="project1" class="style project">
-				<div class="overtint"></div>
-				<div class="project-text">
-					<h3>The Scoop</h3>
-					<span>Advertising</span>
-				</div>
-			</a>
-	
-			<a href="#" id="project2" class="style project">
-				<div class="overtint"></div>
-				<div class="project-text">
-					<h3>PTS Consulting</h3>
-					<span>Branding, UI/UX Design</span>
-				</div>
-			</a>
-	
-			<a href="#" id="project3" class="style project">
-				<div class="overtint"></div>
-				<div class="project-text">
-					<h3>Hull Chess Club</h3>
-					<span>Refresh, UI/UX Design</span>
-				</div>
-			</a>
-	
-			<a href="#" id="project4" class="style project">
-				<div class="overtint"></div>
-				<div class="project-text">
-					<h3>Smart Campus Strategy</h3>
-					<span>Editorial Design</span>
-				</div>
-			</a>
-	<!-- About Me Section -->
-	
-			<div id="about-me">
-				<h2>About Me</h2>
+  <section>
+	<h4>My Portfolio</h4>
+	<h2 id="latest-work">Latest Work</h2>
+	<div id="portfolio-grid">
+		<a href="#" id="project1" class="style project">
+			<div class="overtint"></div>
+			<div class="project-text">
+				<h3>The Scoop</h3>
+				<span>Advertising</span>
 			</div>
-	
-			<div id="profile-image"></div>
-	
-			<div id="profile-text">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dolor fermentum, dapibus ligula non, tincidunt tortor. Duis sed malesuada felis, at consectetur mi. Vivamus sollicitudin ipsum eu erat placerat, ac eleifend nulla interdum. Suspendisse potenti. Nunc auctor nisi in ante sagittis, in tempus metus volutpat. Nam id urna euismod, aliquam turpis et, hendrerit velit.</p>
-				</div>
-			</dix>
-	
+		</a>
+
+		<a href="#" id="project2" class="style project">
+			<div class="overtint"></div>
+			<div class="project-text">
+				<h3>PTS Consulting</h3>
+				<span>Branding, UI/UX Design</span>
+			</div>
+		</a>
+
+		<a href="#" id="project3" class="style project">
+			<div class="overtint"></div>
+			<div class="project-text">
+				<h3>Hull Chess Club</h3>
+				<span>Refresh, UI/UX Design</span>
+			</div>
+		</a>
+
+		<a href="#" id="project4" class="style project">
+			<div class="overtint"></div>
+			<div class="project-text">
+				<h3>Smart Campus Strategy</h3>
+				<span>Editorial Design</span>
+			</div>
+		</a>
+
+  <!-- About Me Section -->
+
+		<div id="about-me">
+			<h2>About Me</h2>
+		</div>
+
+		<div id="profile-image"></div>
+
+		<div id="profile-text">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dolor fermentum, dapibus ligula non, tincidunt tortor. Duis sed malesuada felis, at consectetur mi. Vivamus sollicitudin ipsum eu erat placerat, ac eleifend nulla interdum. Suspendisse potenti. Nunc auctor nisi in ante sagittis, in tempus metus volutpat. Nam id urna euismod, aliquam turpis et, hendrerit velit.</p>
+			</div>
+		</dix>
+
+
+	  </div>
+  </section>
 
 
 
 
+ <!-- Contact-->
 
+  <footer id="contact-me">
+	<h2>Contact Me</h2>
+	<!-- <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iusto recusandae modi! Blanditiis odio eos accusantium voluptatibus. Necessitatibus autem, odit voluptatum minus sint, delectus veritatis numquam debitis ut doloribus iure.</p> -->
 
+	<section id="contact-info">
+		<ul>
+			<li>07521140451</li>
+			<li>jesslouisestephenson@gmail.com</li>
+			<li><a href="https://github.com/Jessie93">Github</a></li>
+			<li><a href="https://www.linkedin.com/in/jessicalouisestephenson/">LinkedIn</a></li>
+		</ul>
+	</section>
+
+</footer>
 
 
 <body>
