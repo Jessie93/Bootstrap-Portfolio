@@ -2,14 +2,23 @@
   --primary-color: rgb(27, 63, 64);
   --secondary-color: rgb(251,239, 225);
   --tertiary-color: rgb(223, 223, 221);
+  --font: (Inter-Medium);
+  --font-bold:(Inter-ExtraBold);
 }
+
+@font-face {
+     font-family: "inter";
+     src: url("../assets/Inter/static/Inter-ExtraBold.ttf");
+     src: url("../assets/Inter/static/Inter-Bold.ttf");
+     src: url("../assets/Inter/static/Inter-Medium.ttf");
+   }
 
 .clear {
 	clear: both;
 }
 
 /******************************************
-/* BASE/LAYOUT STYLES
+/* BASE STYLES
 /*******************************************/
 
 html,
@@ -45,7 +54,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-family:var(--font);
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -83,8 +92,6 @@ p {
 
 
 
-
-
 /******************************************
 /* NAV STYLES
 /*******************************************/
@@ -96,14 +103,14 @@ p {
   border-color:var(--primary-color);
   background-color:var(--primary-color);
   transition: all .35s;
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: var(--font-bold);
   font-weight: 200;
   letter-spacing: 1px;
 } 
 
 #mainNav .navbar-brand {
   color: var(--secondary-color);
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: var(--font-bold);
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -120,7 +127,7 @@ p {
 
 #mainNav .navbar-nav > li > a {
   font-size: 11px;
-  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: var(--font-bold);
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -147,4 +154,29 @@ p {
 #mainNav .container-fluid{
      margin-left: 122px;
      margin-right: 122px;
+}
+
+/******************************************
+/* HERO STYLES
+/*******************************************/
+
+
+.jumbotron{
+     background-color: var(--primary-color);
+     height: 100vh;
+
+}
+
+.display-4{
+     color: var(--secondary-color);
+     margin: 20px
+}
+
+.jumbotron > .container{
+     margin: 240px 508px 417px 122px;
+}
+
+.btn-outline-light{
+     color: var(--secondary-color);
+     margin: 80px 20px 20px 20px;
 }
