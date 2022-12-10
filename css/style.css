@@ -1,0 +1,150 @@
+:root {
+  --primary-color: rgb(27, 63, 64);
+  --secondary-color: rgb(251,239, 225);
+  --tertiary-color: rgb(223, 223, 221);
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE/LAYOUT STYLES
+/*******************************************/
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: var(--tertiary-color);
+  transition: all .35s;
+}
+
+a:hover, a:focus {
+  color: #fcbd20;
+}
+
+hr {
+  max-width: 100px;
+  margin: 25px auto 0;
+  border-width: 1px;
+  border-color: rgba(34, 34, 34, 0.1);
+}
+
+hr.light {
+  border-color: white;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+h2{
+     display: flex;
+     justify-content: center;
+     color: var(--primary-color);
+     margin: 20px 0 82px 0;
+     font-size: 62px;
+}
+
+h3{
+     color: var(--secondary-color);
+}
+
+h4{
+     display: flex;
+     justify-content: center;
+     color: var(--primary-color);
+     margin: 102px 0 0 0;
+     font-size: 18px;
+}
+span{
+     color: var(--secondary-color);
+     display: flex;
+     justify-content: center;
+}
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+/******************************************
+/* NAV STYLES
+/*******************************************/
+
+.navbar{
+
+}
+#mainNav {
+  border-color:var(--primary-color);
+  background-color:var(--primary-color);
+  transition: all .35s;
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+} 
+
+#mainNav .navbar-brand {
+  color: var(--secondary-color);
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+#mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
+  color: var(--tertiary-color);
+}
+
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  padding: 8px 10px;
+  color: var(--secondary-color);
+}
+
+#mainNav .navbar-nav > li > a {
+  font-size: 11px;
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#mainNav .navbar-nav > li > a.active {
+  color: var(--secondary-color) !important;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav > li > a.active:hover {
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav > li > a,
+#mainNav .navbar-nav > li > a:focus {
+  color: var(--secondary-color);
+}
+
+#mainNav .navbar-nav > li > a:hover,
+#mainNav .navbar-nav > li > a:focus:hover {
+  color: var(--tertiary-color);
+}
+
+#mainNav .container-fluid{
+     margin-left: 122px;
+     margin-right: 122px;
+}
