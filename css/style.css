@@ -33,337 +33,201 @@ h6 {
      font-weight: 200;
      letter-spacing: 1px;
      margin: 0;
+     color: var(--secondary-color)
+}
+
+h1{
+     font-size: 90px;
+     font-weight:bold;
 }
 
 h2{
-     display: flex;
-     justify-content: center;
-     color: var(--primary-color);
-     margin: 20px 0 82px 0;
-     font-size: 62px;
-     font-family: 'Inter', sans-serif;
-     font-weight: 400;
+     font-size: 50px;
+     font-weight: 500;
+     margin: 40px 0 60px 0;
+     text-align: center;
 
 }
 
 h3{
-     color: var(--secondary-color);
-     font-family: 'Inter', sans-serif;
-     font-weight: 600;
-
-}
-
-h4{
-     display: flex;
-     justify-content: center;
-     color: var(--primary-color);
-     margin: 102px 0 0 0;
-     font-size: 18px;
-     font-family: 'Inter', sans-serif;
-     font-weight: 400;
+     font-size: 40px;
+     margin-top: 30px;
+}h4{
+     padding-bottom: 30px;
 }
 h5{
-     display: flex;
-     color: var(--primary-color);
-     margin: 102px 0 0 0;
-     font-size: 18px;
-     font-family: 'Inter', sans-serif;
+     font-size: 25px;
      font-weight: 400;
-     margin-bottom: 20px;
+     color: var(--primary-color);
 }
 
-span{
+
+ul > li{
+     margin: 0 50px 0 80px;
      color: var(--secondary-color);
-     display: flex;
-     justify-content: center;
-     font-family: 'Inter', sans-serif;
-     font-weight: 200;
 }
 
 
 
 
-/******************************************
-/* NAV STYLES
-/*******************************************/
 
-.navbar{
 
-}
-#mainNav {
-  border-color:var(--primary-color);
-  background-color:var(--primary-color);
-  transition: all .35s;
-  font-family: 'Inter', sans-serif;
-   font-weight: 400;
-  letter-spacing: 1px;
-} 
 
-#mainNav .navbar-brand {    /* This code is for My Name top left  */
-  color: var(--secondary-color);
-  font-family: 'Inter', sans-serif;
-  font-weight: 200;
-  letter-spacing: 1px;
+/* Navigation section ============= */
+
+#navbarNavAltMarkup{
+     justify-content: right;
 }
 
-/* #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-  color: var(--tertiary-color);
-} */
-
-/* #mainNav .navbar-toggler {
-  font-size: 12px;
-  padding: 8px 10px;
-  color: var(--secondary-color);
-} */
-
-
-/* Changes the size of the about me etc in the nav bar  */
-#mainNav .navbar-nav > li > a {
-  font-size: 11px;
-  font-family: 'Inter', sans-serif;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+/* This changes colour of 'My Portfolio' top left in the nav bar */
+.navbar-light .navbar-brand {
+     color: var(--primary-color);
 }
 
-/* #mainNav .navbar-nav > li > a.active {
-  color: var(--secondary-color) !important;
-  background-color: transparent;
-}
+.nav-item {
+     color: var(--primary-color)!important;  
+ }
 
-#mainNav .navbar-nav > li > a.active:hover {
-  background-color: transparent;
-}
- */
-
-/* Changes the colour of the text top right in the nav bar  */
-#mainNav .navbar-nav > li > a,
-#mainNav .navbar-nav > li > a:focus {
-  color: var(--secondary-color);
-}
+ .navbar-light .navbar-toggler {
+     color: var(--primary-color);
+     border-color:var(--primary-color);
+ }
 
 
-/* Changes the hover in the nav bar  */
-#mainNav .navbar-nav > li > a:hover,
-#mainNav .navbar-nav > li > a:focus:hover {
-  text-decoration: underline 2px;
-}
-
-#mainNav .container-fluid{
-     margin-left: 68px;
-     margin-right: 60px;
-}
-
-/******************************************
-/* HERO STYLES
-/*******************************************/
+/* Hero section ============= */
 
 
-.jumbotron{
-     background-color: var(--primary-color);
-     height: 100vh;
 
-}
-
-.display-4{
-     color: var(--secondary-color);
-     font-family: 'Inter', sans-serif;
-     font-weight: 300;
-     padding-bottom: 10px;
-}
-
-
-.jumbotron > .container{
-     margin: 240px 508px 417px 122px;
-}
-
-.btn-outline-light{
-     color: var(--secondary-color);
-     margin: 80px 0px 20px 0px;
-}
-
-
-/******************************************
-/* PORTFOLIO + ABOUT ME STYLES
-/*******************************************/
-
-#portfolio-grid{
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-     grid-template-rows: 500px 500px 260px 500px;
-     gap: 20px;
-     margin-left: 100px;
-     margin-right: 100px;
-     grid-template-areas: 
-     "p1 p1 p2 p2 p2"
-     "p3 p3 p3 p4 p4"
-     "am am am am am"
-     "pi pi pt pt pt";
-     object-fit: cover;
-     
-   }
-
-
-#project1{
-     grid-area: p1;
-     background-color: var(--primary-color);
-     background-image: url(../assets/images/6e074cd3-35d4-4a1a-b028-1c1aabd21e29_rw_1200.png);
-}
-
-#project2{
-     grid-area: p2;
-     background-color: var(--primary-color);
-     background-image: url(../assets/images/52b56f9b-c0b4-484f-bb72-4f5b2e44f876_rw_1920.jpg);
-}
-
-#project3{
-     grid-area: p3;
-     background-color: var(--primary-color);
-     background-image: url(../assets/images/eead730c-8371-4b24-bc49-fe2b376f3274_rw_1920.png);
-
-}
-
-#project4{
-     grid-area: p4;
-     background-color: var(--primary-color);
-     background-image: url(../assets/images/73fa1c3f-64ba-4a91-9bbb-7c81c3bf2f5d_rw_1920.png);
-}
-
-#about-me{
-     grid-area: am;
-}
-
-#profile-image{
-     grid-area: pi;
-     background-image: url(../assets/images/About\ Me\ Image-01.png);
-     }
-
-#profile-text{
-     grid-area: pt;
-     display: flex;
-     flex-direction: column;
-     align-items: left;
-}
-
-
-#about-me > h2{
-     margin-top: 120px;
-}
-
-
-/* code below shows project grid styling  */
-
-#project1, #project2, #project3, #project4{
+.jumbotron {
      position: relative;
      width: 100%;
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center;
-     text-decoration: none;
+     padding-top: 150px;
+     padding-bottom: 100px;
    }
    
-   .project-text{
-     width: fit-content;
-     padding: 10px;
-     margin-bottom: 30px;
-     z-index: 2;
+
+/* .jumbotron .header-content {
+     max-width: 500px;
+     margin-bottom: 100px;
+     text-align: center;
+   } */
+   
+/* .jumbotron .header-content h1 {
+     font-size: 30px;
+   }
+    */
+.profileimage-container {
+     max-width: 325px;
+     margin-right: auto;
+     margin-left: auto;
    }
    
-   .style{
-     display: flex;
+.jumbotron-fluid{
+     background-color: var(--primary-color);
+     padding: 300px 0 0 0 ;
+}
+
+.lead{
+     font-size: 50px;
+}
+
+.row{
+     justify-content: space-between;
      align-items: center;
-     justify-content: center;
-     height: 100%;
-     transition: all ease-in-out;
-   }
-   
+}
 
 
 
-   /* how to add a hover, tint and grow to the images in portfolio grid. */
-   
-   
-   .overtint {
-     position:absolute;
-     background-color: rgba(1, 16, 17, 0.9);
-     width:100%; 
-     height:100%;
-   }
-   
-   #project1> .overtint + div{
-     z-index: 2;
-   }
-   
-   a:hover .overtint { 
-     opacity: 0;
-     transition-duration: .5s;
-   }
-   
-   
-   #workGrid a:hover{
-     transform: scale(1.01);
-   }
-   
-   .project:hover .project-text {
-     display: none;
-   }
 
 
-/******************************************
-/* CONTACT ME STYLES
-/*******************************************/
 
 
-#contact-me{
-     margin-top: 150px;
+
+
+
+
+/* Portfolio section ============= */
+
+#work{
+     padding: 30px;
      background-color: var(--primary-color);
 }
 
-#contact-me h2{
-     color: var(--secondary-color);
-     padding-top: 150px;
+
+.card-img-top{
+     height: 400px;
+     object-fit: cover;
+}
+
+.mb-3{
+     margin: 40px 30px 40px 30px !important;
+
+}
+
+#portfolio{
+     background-color: var(--primary-color);
 }
 
 
-#contact-me > p{
+.card-body{
      display: flex;
-     justify-content: center;
-     color: var(--secondary-color);
+     flex-direction: column;
+     align-items: flex-start;
 }
 
 
-#contact-info{
-     grid-area: contact-info;
-     width: 100%;
-     padding-bottom: 60px;
-     margin: auto;
+
+
+
+
+
+
+
+/* Skills section ============= */
+
+#skills p{
+     padding: 0 50px 0 50px;
+     color: white;
+}
+
+#skills{
+     background-color: var(--primary-color);
+     padding: 50px 0 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About Me/Contact section ============= */
+.contact-section {
+     padding-top: 5rem;
    }
-   
-   #contact-info ul{
-     display: flex;
-     justify-content: space-around;
-     list-style: none;
-     padding: 0;
-     color: var(--secondary-color);
+   .contact-section .card {
+     border: 0;
+     border-bottom: 0.25rem solid #64a19d;
    }
-   
-   #contact-info > ul> li> a {
-     color: var(--secondary-color);
-     text-decoration: underline;
-     text-underline-offset:8px;
-     font-weight: bold;
+   .contact-section .card h4 {
+     font-size: 0.8rem;
+     font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+     text-transform: uppercase;
+     letter-spacing: 0.15rem;
    }
-
-
-
-
-/******************************************
-/* CONTACT ME STYLES
-/*******************************************/
-/* Footer Section */
-
-
-.contact-section .social {
-     margin-top: 5re;
+   .contact-section .card hr {
+     border-color: #64a19d;
+     border-width: 0.25rem;
+     width: 3rem;
+   }
+   .contact-section .social {
+     margin-top: 5rem;
    }
    .contact-section .social a {
      text-align: center;
@@ -380,19 +244,36 @@ span{
    .contact-section .social a:active {
      color: #fff;
    }
-   .bg-green {
-     background-color: var(--primary-color);
+   
+   .bg-black {
+     background-color: #000000 !important;
    }
+   
 
 
+   /* Footer section ============= */
 
-
-
-
-
-
-
-
-
-
-
+   footer {
+     padding: 25px 0;
+     text-align: center;
+     color: rgba(255, 255, 255, 0.3);
+     background-color: #222222;
+   }
+   
+   footer p {
+     font-size: 12px;
+     margin: 0;
+   }
+   
+   footer ul {
+     margin-bottom: 0;
+   }
+   
+   footer ul li a {
+     font-size: 12px;
+     color: rgba(255, 255, 255, 0.3);
+   }
+   
+   footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
+     text-decoration: none;
+   }
