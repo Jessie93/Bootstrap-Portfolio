@@ -89,3 +89,13 @@
      border: 1px solid lightgray;
    }
    
+/******************************************
+/* OTHER STYLES
+/*******************************************/
+
+/* This was used in combination with a div in the jumbotron to prevent any overspill from the image when the viewport width would skrink. The div is the element now distributed with flex and image fills only that distributed space */
+img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover
+ }
