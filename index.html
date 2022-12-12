@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-gb">
 
 <head>
-	<meta charset="utf-8">
+  <!-- All previously seen information included here as well as specific links to the chosen fonts for this project from Google Fonts -->
+  <meta charset="utf-8">
 	<meta name="description" content="Your description goes here">
 	<meta name="keywords" content="one, two, three">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,168 +17,61 @@
 	<title>Jessica Stephenson Portfolio</title>
 
 	<!-- external CSS link -->
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="/css/style.css">
+
 </head>
 
-<!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<a class="navbar-brand" href="#">My Protfolio</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-	  <div class="navbar-nav">
-		<a class="nav-item nav-link" href="#work">Work</a>
-		<a class="nav-item nav-link" href="#about">About</a>
-		<a class="nav-item nav-link" href="#contact">Contact Me</a>
-	  </div>
-	</div>
+<body id="page-top">
+
+  <!-- Navigation Section -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <!-- Consistent use of .container is to prevent the content from stretching out to fill the viewport making for unsightly white space spread unevenly across different sections -->
+    <div class="container">
+      <!-- Bootstrap documentation recommends use of a tag with class navbar-brand to save on extra styling -->
+      <a href="#page-top" class="navbar-brand">Jessica's Portfolio</a>
+
+      <!-- Creation of a hamburger menu in small viewport this will interact with navigational content to follow-->
+      <!-- Extra properties taken from Bootstrap documentation on navbar combined with assigning the target id to the navigational contents div allows the menu to be toggled in small viewport when the links disappear from top of page -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu">
+        <!-- span class shows as hamburger icon for the menu toggle -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsing navigational content, it does not show by default until viewport is "large". Created using bootstrap classes from documentation -->
+      <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#myWork" class="nav-link">Work</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#aboutMe" class="nav-link">About Me</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
   </nav>
 
 
-<!-- Hero Section -->
-	<header class="jumbrotron jumbotron-fluid h-100">  
-	<!-- putting 'h-100' makes the jumbotron take up the whole page -->
-	<!-- using jumbotron-fluid makes the jumbotron take up the full width of the screen -->
-		<div class="container">
-		  <div class="row h-100">
-			<div class="col-lg-7 my-auto">
-			  <div class="header-content mx-auto">
-				<h1 >Hello. </h1>
-				<h3 class="lead">I'm Jessica Stephenson,</h3>
-				<h4>A Front-End Web Developer.</h4>
-			  </div>
-			</div>
-			<div class="col-lg-5 my-auto">
-			  <div class="profileimage-container">
-				<img src="/assets/images/About Me Image-01.png" class="img-fluid" alt="">
-	<!-- Using img-fluid makes my image responsive -->
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </header>
-	
-
-  <!-- Portfolio Section -->
-<section id="work">
-	<h2>My Work</h2>
-
-  <div class="card mb-3">
-	<a href="https://jessie93.github.io/horiseon-code-refactor/"><img src="/assets/images/horieon 2.png" class="card-img-top" alt="People sat around a table working"> </a>
-	<div class="card-body">
-	  <h5 class="card-title">Horiseon</h5>
-	  <p class="card-text">Code Refactor</p>
-	</div>
-  </div>
-
-  <div class="card mb-3">
-	<a href="https://jessie93.github.io/horiseon-code-refactor/"><img src="/assets/images/52b56f9b-c0b4-484f-bb72-4f5b2e44f876_rw_1920.jpg" class="card-img-top" alt="Computer screen displaying the New PTS Website design"> </a>
-	<div class="card-body">
-	  <h5 class="card-title">PTS Global</h5>
-	  <p class="card-text">Brand Refresh - UX/UI Design</p>
-	</div>
-  </div>
-
-  <div class="card mb-3">
-	<a href="https://jessie93.github.io/horiseon-code-refactor/"><img src="/assets/images/eead730c-8371-4b24-bc49-fe2b376f3274_rw_1920.png" class="card-img-top" alt="Multiple image mockups of how the chess club website will look"> </a>
-	<div class="card-body">
-	  <h5 class="card-title">Hull Chess Club</h5>
-	  <p class="card-text">UX/UI Design</p>
-	</div>
-  </div>
-</section>
 
 
-  <!-- Skills Section -->
-
-<section id="skills">
-	<h2>Skills</h2>
-	<p>Gain web development fundamentals with languages such as HTML, CSS, and JavaScript
-		Leverage and manipulate data via application programming interfaces (APIs)
-		Utilise modern front-end frameworks to structure, position, and optimise web page content
-		Build modern web applications with industry-standard frameworks like Node and React</p>
-		<ul>
-			<li>HTML</li>
-			<li>CSS</li>
-			<li>JavaScript</li>
-			<li>Node</li>
-			<li>React</li>
-			<li>Leverage and manipulate data via application programming interfaces (APIs)</li>
-			<li>Utilise modern front-end frameworks to structure, position, and optimise web page content</li>
-			<li>Build modern web applications with industry-standard frameworks</li>
-
-		</ul>
-</section>
+  
 
 
 
- <!-- About Me/ Contact-->
-  <!-- Contact-->
-  <section class="contact-section bg-black">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Address</h4>
-              <hr class="my-4" />
-              <div class="small text-black-50">4923 Market Street, Sacramento,</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-envelope text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Email</h4>
-              <hr class="my-4" />
-              <div class="small text-black-50"><a href="#!">hello@california.com</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-mobile-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Phone</h4>
-              <hr class="my-4" />
-              <div class="small text-black-50">+1 (800) CALI-FORNIA </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="social d-flex justify-content-center">
-        <a class="mx-2" href="https://www.linkedin.com/in/jessicalouisestephenson/"><i class="fab fa-linkedin"></i></a>
-        <a class="mx-2" href="https://github.com/Jessie93"><i class="fab fa-github"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; Your Website 2020. All Rights Reserved.</p>
-
-    </div>
-  </footer>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- JavaScript links seen and copied over from in class task to ensure proper functionality (collapsing hamburger menu)  -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-
-
-<body>
-
-	<script type="text/javascript" src="js/main.js"></script>
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"></script>
 </body>
 
 </html>

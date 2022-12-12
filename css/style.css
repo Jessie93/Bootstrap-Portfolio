@@ -1,279 +1,103 @@
-:root {
-  --primary-color: rgb(27, 63, 64);
-  --secondary-color: rgb(251,239, 225);
-  --tertiary-color: rgb(223, 223, 221);
-
-}
-
-/* 
-
-   .clear {
-	clear: both;
-} */
-
 /******************************************
 /* BASE/LAYOUT STYLES
 /*******************************************/
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-  
-}
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-     font-family: 'Inter', sans-serif;
-     font-weight: 200;
-     letter-spacing: 1px;
-     margin: 0;
-     color: var(--secondary-color)
-}
-
-h1{
-     font-size: 90px;
+*{
+     box-sizing: border-box;
+   }
+   
+   /* Having searched the internet to remedy an issue where the body element was not full height this was how I was shown to resolve the issue. It was noted to be a slight problem with some things relating to Bootstrap. (Will need to review at a later date to see where the issue comes from) */
+   body {
+     height: 100%;
+     width: 100%;
+     position: absolute;
+   }
+   
+   /******************************************
+   /* FONT STYLES
+   /*******************************************/
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 200;
+        letter-spacing: 1px;
+        margin: 0;
+   }
+   
+   h1{
+     font-size: 70px;
      font-weight:bold;
-}
-
-h2{
+   }
+   
+   h2{
      font-size: 50px;
      font-weight: 500;
-     margin: 40px 0 60px 0;
-     text-align: center;
-
-}
-
-h3{
-     font-size: 40px;
-     margin-top: 30px;
-}h4{
+   }
+   
+   h3{
+     font-size: 35px;
+   }
+   h4{
      padding-bottom: 30px;
-}
-h5{
-     font-size: 25px;
-     font-weight: 400;
-     color: var(--primary-color);
-}
-
-
-ul > li{
-     margin: 0 50px 0 80px;
-     color: var(--secondary-color);
-}
-
-
-
-
-
-
-
-/* Navigation section ============= */
-
-#navbarNavAltMarkup{
-     justify-content: right;
-}
-
-/* This changes colour of 'My Portfolio' top left in the nav bar */
-.navbar-light .navbar-brand {
-     color: var(--primary-color);
-}
-
-.nav-item {
-     color: var(--primary-color)!important;  
- }
-
- .navbar-light .navbar-toggler {
-     color: var(--primary-color);
-     border-color:var(--primary-color);
- }
-
-
-/* Hero section ============= */
-
-
-
-.jumbotron {
-     position: relative;
-     width: 100%;
-     padding-top: 150px;
-     padding-bottom: 100px;
+   }
+   p, li{
+     font-family: 'Inter', sans-serif;
    }
    
-
-/* .jumbotron .header-content {
-     max-width: 500px;
-     margin-bottom: 100px;
-     text-align: center;
-   } */
    
-/* .jumbotron .header-content h1 {
-     font-size: 30px;
-   }
-    */
-.profileimage-container {
-     max-width: 325px;
-     margin-right: auto;
-     margin-left: auto;
-   }
    
-.jumbotron-fluid{
-     background-color: var(--primary-color);
-     padding: 300px 0 0 0 ;
-}
-
-.lead{
-     font-size: 50px;
-}
-
-.row{
-     justify-content: space-between;
-     align-items: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Portfolio section ============= */
-
-#work{
-     padding: 30px;
-     background-color: var(--primary-color);
-}
-
-
-.card-img-top{
-     height: 400px;
-     object-fit: cover;
-}
-
-.mb-3{
-     margin: 40px 30px 40px 30px !important;
-
-}
-
-#portfolio{
-     background-color: var(--primary-color);
-}
-
-
-.card-body{
-     display: flex;
-     flex-direction: column;
-     align-items: flex-start;
-}
-
-
-
-
-
-
-
-
-
-/* Skills section ============= */
-
-#skills p{
-     padding: 0 50px 0 50px;
+   
+   /******************************************
+   /* LINK/BUTTON STYLES
+   /*******************************************/
+   
+   /* Styling of buttons with box shadow on a dark background (Within work cards) */
+   #myWork button {
+     background: none;
+     border: 1px solid;
+     font: inherit;
+     line-height: 1.5;
+     margin: 5px;
+     padding: 5px;
      color: white;
-}
-
-#skills{
-     background-color: var(--primary-color);
-     padding: 50px 0 50px 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* About Me/Contact section ============= */
-.contact-section {
-     padding-top: 5rem;
-   }
-   .contact-section .card {
-     border: 0;
-     border-bottom: 0.25rem solid #64a19d;
-   }
-   .contact-section .card h4 {
-     font-size: 0.8rem;
-     font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-     text-transform: uppercase;
-     letter-spacing: 0.15rem;
-   }
-   .contact-section .card hr {
-     border-color: #64a19d;
-     border-width: 0.25rem;
-     width: 3rem;
-   }
-   .contact-section .social {
-     margin-top: 5rem;
-   }
-   .contact-section .social a {
-     text-align: center;
-     height: 3rem;
-     width: 3rem;
-     background: rgba(255, 255, 255, 0.1);
-     border-radius: 100%;
-     line-height: 3rem;
-     color: rgba(255, 255, 255, 0.3);
-   }
-   .contact-section .social a:hover {
-     color: rgba(255, 255, 255, 0.5);
-   }
-   .contact-section .social a:active {
-     color: #fff;
+     width: 90px;
    }
    
-   .bg-black {
-     background-color: #000000 !important;
+   #myWork .raise:hover,
+   #myWork .raise:focus {
+     box-shadow: inset 6.5em 0 0 0 black;
+     border: 1px solid black;
    }
    
-
-
-   /* Footer section ============= */
-
-   footer {
-     padding: 25px 0;
-     text-align: center;
-     color: rgba(255, 255, 255, 0.3);
-     background-color: #222222;
+   /* Styling of buttons with box shadow on a light background (Within Socials Card) */
+   button {
+     background: none;
+     border: 1px solid;
+     font: inherit;
+     line-height: 1.5;
+     margin: 5px;
+     padding: 5px;
+     color: black;
+     width: 90px;
    }
    
-   footer p {
-     font-size: 12px;
-     margin: 0;
+   .raise:hover,
+   .raise:focus {
+     box-shadow: inset 6.5em 0 0 0 lightgray;
+     border: 1px solid lightgray;
    }
    
-   footer ul {
-     margin-bottom: 0;
-   }
+   /******************************************
+   /* OTHER STYLES
+   /*******************************************/
    
-   footer ul li a {
-     font-size: 12px;
-     color: rgba(255, 255, 255, 0.3);
-   }
-   
-   footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
-     text-decoration: none;
+   /* This was used in combination with a div in the jumbotron to prevent any overspill from the image when the viewport width would skrink. The div is the element now distributed with flex and image fills only that distributed space */
+   img{
+       height: 100%;
+       width: 100%;
+       object-fit: cover
    }
