@@ -49,14 +49,12 @@
    }
    
    
-   
-   
    /******************************************
-   /* LINK/BUTTON STYLES
-   /*******************************************/
-   
-   /* Styling of buttons with box shadow on a dark background (Within work cards) */
-   #myWork button {
+/* LINK/BUTTON STYLES
+/*******************************************/
+
+/* Styling of buttons with box shadow on a dark background (Within work cards) */
+#myWork button {
      background: none;
      border: 1px solid;
      font: inherit;
@@ -67,8 +65,8 @@
      width: 90px;
    }
    
-   #myWork .raise:hover,
-   #myWork .raise:focus {
+   #myWork .fill:hover,
+   #myWork .fill:focus {
      box-shadow: inset 6.5em 0 0 0 black;
      border: 1px solid black;
    }
@@ -85,19 +83,9 @@
      width: 90px;
    }
    
-   .raise:hover,
-   .raise:focus {
+   .fill:hover,
+   .fill:focus {
      box-shadow: inset 6.5em 0 0 0 lightgray;
      border: 1px solid lightgray;
    }
    
-   /******************************************
-   /* OTHER STYLES
-   /*******************************************/
-   
-   /* This was used in combination with a div in the jumbotron to prevent any overspill from the image when the viewport width would skrink. The div is the element now distributed with flex and image fills only that distributed space */
-   img{
-       height: 100%;
-       width: 100%;
-       object-fit: cover
-   }
