@@ -61,6 +61,15 @@ This layout has been designed for viewing on a slightly smaller screen that the 
 Link to deployed site 
 https://jessie93.github.io/Bootstrap-Portfolio/
 
+## Installation
+
+To clone the repository, run the following command:
+git@github.com:Jessie93/Bootstrap-Portfolio.git
+
+To run the application, follow these steps:
+
+* Clone the repository using the command git clone git@github.com:Jessie93/Bootstrap-Portfolio.git
+* Open the index.html file in your browser to view the application.
 
 
 
