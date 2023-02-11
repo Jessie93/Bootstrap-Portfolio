@@ -3,31 +3,27 @@ Bootstrap portfolio for Jessica Stephenson
 
 
 # Description
-Portfolio for Jessica Stephenson - Junior Front-End Web Developer.
-Recreate my personal portfolio using as much Bootstrap as possible to showcase my up and coming projects. 
+Description
+This portfolio website showcases the works and skills of Jessica Stephenson, a Junior Front-End Web Developer. It was created using HTML, CSS, Javascript, and Bootstrap. The website features a navigation bar and menu at the top, links to navigate to different sections, a hero section, jumbotron with a picture, name, and information about the developer, a work section displaying projects in a grid using bootstrap cards, a skills section, an about me section, and a footer. The website is responsive and was designed to minimize the use of media queries.
 
-I have chosen to use my own placeholder images as these are more visually appealing. With more time I would like to update my portfolio to show not only that I am a web developer but I also have a background in UX/UI and Graphic Design. 
+With more time I would like to update my portfolio to show not only that I am a web developer but I also have a background in UX/UI and Graphic Design. 
 > **Note**: please see roadmap section
 
 > **Note**: All projects within this portfolio are placeholders except the Horiseon code refactor project. All placeholder projects will link to the Horiseon code refactor project page.
 
-# Criteria
-
-Using Bootstrap, recreate your portfolio site with the following items:
-The website should include the following bootstrap components:
-
-* A Navigation bar and a navigation menu at the top.
-* Include links that are applicable to your portfolio. Links should navigate to the appropriate sections
-* A hero section
-* A jumbotron featuring your picture, your name, and any other information you'd like to include.
-* A work section that displays your work in grid.
-* Use bootstrap cards for each project.The description should give a brief overview of the work.
-* A skills section
-* An "About Me" section 
-* A footer section.
-* All hyperlinks should have a hover effect.
-* All buttons should display a box shadow upon hover.
-* Your Bootstrap solution should minimize use of media queries.
+# Features
+* Navigation bar with a menu at the top.
+* Links that navigate to the relevant sections of the portfolio.
+* Hero section with a personalized touch.
+* A jumbotron with a picture, name, and additional information.
+* Work section displayed in a grid layout using bootstrap cards.
+* Brief overview of each project in the work section.
+* Skills section showcasing technical abilities.
+* An "About Me" section that highlights personal background.
+* Footer section with necessary information.
+* Hyperlinks with hover effect.
+* Buttons with a box shadow effect on hover.
+* Minimal use of media queries to ensure optimal responsiveness.
 
 > **Note**: Multiple comments within the code to show workings/understanding 
 
@@ -37,7 +33,7 @@ This portfolio was created using
 * HTML
 * CSS
 * Javascript
-* (Bootstrap)
+* Bootstrap
 
 
 # Screenshot
@@ -63,9 +59,6 @@ https://jessie93.github.io/Bootstrap-Portfolio/
 
 ## Installation
 
-To clone the repository, run the following command:
-git@github.com:Jessie93/Bootstrap-Portfolio.git
-
 To run the application, follow these steps:
 
 * Clone the repository using the command git clone git@github.com:Jessie93/Bootstrap-Portfolio.git
@@ -75,9 +68,7 @@ To run the application, follow these steps:
 
 # Roadmap
 
-I would like to incorporate my UX/UI and Graphic Design working into my portfolio to show that I also 8+ years working in the design field. 
-
-I would like to remove the profile picture and stick it in the ‘about me section’ Please view the gif attached. These updates are not complete but when they are I will add a link to my deployed site. 
+The developer would like to incorporate her background in UX/UI and Graphic Design into the portfolio to showcase her 8+ years of experience in the design field. The profile picture will be removed and added to the about me section. The updates are still ongoing and a link to the deployed site will be provided once completed.
 
 ![GIF- Screen Recording - desktop view](assets/images/ezgif.com-gif-maker.gif)
 
